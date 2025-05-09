@@ -15,8 +15,87 @@ updates:
         patterns:
           - "*"
 
+  # NuGet dependencies – grouped together across multiple directories
   - package-ecosystem: "nuget"
-    directory: "/"
+    directory: "/Services/src/esg-ai-doc-analysis/CFS.SK.Sustainability.Abstract"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/esg-ai-doc-analysis/CFS.SK.Sustainability.AI"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/esg-ai-doc-analysis/CFS.SK.Sustainability.AI.Host"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/esg-ai-doc-analysis/CFS.SK.Sustainability.AI.Storage"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/esg-ai-doc-analysis/WebClient"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/kernel-memory/clients/dotnet/SemanticKernelPlugin"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
+    target-branch: "dependabotchanges"
+    open-pull-requests-limit: 10
+    groups:
+      all-nuget-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "nuget"
+    directory: "/Services/src/kernel-memory/clients/dotnet/WebClient"
     schedule:
       interval: "monthly"
     commit-message:
